@@ -64,3 +64,52 @@ plt.legend()
 
 plt.tight_layout()
 plt.show()
+
+"""
+Practice Exercise 1
+In this practice exercise, let's try to create the hyperbolic tangent function and it's derivative.
+"""
+def tanh(z):
+    return np.tanh(z)
+
+def tan_derivative(z):
+    return 1 - np.tanh(z) ** 2
+
+"""
+Practice Exercise 2¶
+Now, let's plot and compare the output of tanH function with the ReLU function for 100 synthetic values between -5 to 5
+"""
+
+# Generate a range of input values
+z = np.linspace(-5, 5, 100)
+
+# Get the Relu and tanH gradient values
+tanh_grad = tan_derivative(z)
+relu_grad = relu_derivative(z)
+
+# Plot the activation functions
+plt.figure(figsize=(12, 6))
+
+# Plot Relu and its derivative
+plt.subplot(1, 2, 1)
+plt.plot(z, relu(z), label='ReLU Activation', color='g')
+plt.plot(z, relu_grad, label="ReLU Derivative", color='r', linestyle='--')
+plt.title('ReLU Activation & Gradient')
+plt.xlabel('Input Value (z)')
+plt.ylabel('Activation / Gradient')
+plt.legend()
+
+
+# Plot tanH and its derivative
+plt.subplot(1, 2, 2)
+plt.plot(z, tanh(z), label='tanH Activation', color='g')
+plt.plot(z, tanh_grad, label="tanH Derivative", color='r', linestyle='--')
+plt.title('tanH Activation & Gradient')
+plt.xlabel('Input Value (z)')
+plt.ylabel('Activation / Gradient')
+plt.legend()
+
+plt.tight_layout()
+plt.show()
+
+
