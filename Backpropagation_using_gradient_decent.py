@@ -224,3 +224,29 @@ plt.title('Error')
 plt.xlabel('Epochs')
 plt.ylabel('Error')
 plt.show()
+
+"""
+Epoch: 9999, Average error: 0.02767
+Epoch: 19999, Average error: 0.01716
+Epoch: 29999, Average error: 0.01331
+Epoch: 39999, Average error: 0.01120
+Epoch: 49999, Average error: 0.00982
+Epoch: 59999, Average error: 0.00884
+Epoch: 69999, Average error: 0.00809
+Epoch: 79999, Average error: 0.00750
+Epoch: 89999, Average error: 0.00702
+Epoch: 99999, Average error: 0.00661
+Epoch: 109999, Average error: 0.00627
+Epoch: 119999, Average error: 0.00598
+Epoch: 129999, Average error: 0.00572
+Epoch: 139999, Average error: 0.00549
+Epoch: 149999, Average error: 0.00528
+Epoch: 159999, Average error: 0.00510
+Epoch: 169999, Average error: 0.00493
+Epoch: 179999, Average error: 0.00478
+
+Final output after training: [[2.12971475e-04 4.95342068e-03 5.00789915e-03 9.91056090e-01]]
+Ground truth [0 0 0 1]
+Error after training: [[-0.00021297 -0.00495344 -0.00500791  0.00894394]]
+Average error: 0.00478
+"""
